@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bishnu Gautam — Fisheries Development Officer (Nuwakot, Nepal)</title>
+  <meta name="description" content="Portfolio of Bishnu Gautam, Fisheries Development Officer (FDO), specializing in aquaculture development, hatchery management, farmer training, and sustainable fisheries in Nepal." />
+  <meta property="og:title" content="Bishnu Gautam — Fisheries Development Officer (Nuwakot, Nepal)" />
+  <meta property="og:description" content="Aquaculture development • Hatchery & grow-out • Farmer training • Water quality monitoring • Cooperative ponds" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="./assets/images/og-fdo.jpg" />
+  <meta property="og:url" content="https://example.com/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+
+  <style>
+    /* --------- local overrides --------- */
+    .title { color: #3a7d44; }
+    .kpi-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:16px}
+    .kpi {background:#1f2937; color:#ffffff; padding:12px;border-radius:12px;text-align:center;border:1px solid rgba(255,255,255,.15)}
+    .kpi .num {font-weight:600;font-size:1.1rem;line-height:1.2;color:#ffffff}
+    .kpi .lbl {opacity:.9;font-size:.85rem;color:#ffffff}
+    .badge {display:inline-block;background:#e6f4ea;color:#2e7d32;padding:.25rem .5rem;border-radius:999px;font-size:.8rem;margin-right:.25rem}
+    .service .service-item-title{white-space:normal}
+    .skills-list .h5{min-width:180px}
+    .navbar .navbar-link[aria-current="page"]{color:#3a7d44}
+    .contact .form-btn[disabled]{opacity:.6}
+
+    /* Avatar */
+    .avatar {
+      width: 148px; height: 148px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 3px solid #3a7d44;
+      box-shadow: 0 4px 14px rgba(0,0,0,.18);
+      margin: 0 0 12px;
+      background:#fff;
+    }
+    .avatar img { width:100%; height:100%; object-fit:cover; display:block; }
+
+    /* Readable on dark sections (Projects) */
+    .on-dark { color:#fff; }
+    .on-dark h1,.on-dark h2,.on-dark h3,.on-dark h4,
+    .on-dark p,.on-dark li,.on-dark small,.on-dark span,
+    .on-dark .project-title,.on-dark .project-category,.on-dark .project-description { color:#fff; }
+    .on-dark a { color:#9dd6ff; }
+    .on-dark .project-description { text-shadow:0 1px 2px rgba(0,0,0,.6); }
+    .highlight-pill { display:inline-block; background:rgba(255,255,255,.08); padding:.4rem .6rem; border-radius:.5rem; backdrop-filter:blur(2px); }
+
+    /* ==== Mobile overlap hard-fix ==== */
+    @media (max-width: 768px){
+      /* Let the sidebar (with photo) flow in document order */
+      .sidebar{
+        position: static !important;
+        transform: none !important;
+        margin: 0 0 16px 0 !important;
+        z-index: auto !important;
+      }
+      /* Space for content beneath the sidebar */
+      .main-content{
+        margin: 0 !important;
+        padding-top: 8px !important;
+      }
+      .main-content > article:first-of-type{
+        margin-top: 32px !important; /* bump to 24–32px if still tight */
+      }
+      /* Bottom navbar: stick without covering content */
+      .navbar{
+        position: sticky !important;
+        bottom: 0;
+        top: auto !important;
+        z-index: 1000;
+        background: #1e1e1e;
+        border-top: 1px solid rgba(255,255,255,.08);
+        backdrop-filter: blur(8px);
+      }
+      /* Reserve space for the navbar (JS sets --nav-h precisely) */
+      :root{ --nav-h: 64px; } /* fallback */
+      main{
+        padding-bottom: calc(var(--nav-h) + env(safe-area-inset-bottom)) !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <!-- Sidebar -->
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <div class="avatar" aria-hidden="true">
+          <!-- update src if your file path is different -->
+          <img src="./assets/images/bishnu.jpg" alt="Portrait of Bishnu Gautam" loading="lazy" width="148" height="148" />
+        </div>
+
+        <div class="info-content">
+          <h1 class="name" title="Bishnu Gautam">Bishnu Gautam</h1>
+          <p class="title">Fisheries Development Officer (FDO)</p>
+          <div class="kpi-grid" aria-label="Key achievements">
+            <div class="kpi"><div class="num">1500+ farmers</div><div class="lbl">trained</div></div>
+            <div class="kpi"><div class="num">85+ ponds</div><div class="lbl">new/rehab</div></div>
+            <div class="kpi"><div class="num">25%</div><div class="lbl">avg yield gain</div></div>
+            <div class="kpi"><div class="num">10+</div><div class="lbl">districts served</div></div>
+          </div>
+        </div>
+        <button class="info_more-btn" data-sidebar-btn><span>Show Contacts</span></button>
+      </div>
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+        <ul class="contacts-list">
+          <li class="contact-item"><div class="contact-info"><p class="contact-title">Email</p><a href="mailto:almighty.bishnu@gmail.com" class="contact-link">almighty.bishnu@gmail.com</a></div></li>
+          <li class="contact-item"><div class="contact-info"><p class="contact-title">Phone</p><a href="tel:+9779857038286" class="contact-link">+977 985-703-8286</a></div></li>
+          <li class="contact-item"><div class="contact-info"><p class="contact-title">Birthday</p><time datetime="1994-04-09">April 9, 1994</time></div></li>
+          <li class="contact-item"><div class="contact-info"><p class="contact-title">Location</p><address>Nuwakot, Nepal</address></div></li>
+        </ul>
+        <div class="separator"></div>
+        <ul class="social-list">
+          <li class="social-item"><a href="https://www.researchgate.net/profile/Bishnu-Gautam-3" target="_blank" rel="noopener" class="social-link">ResearchGate</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <div class="main-content">
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item"><button class="navbar-link active" data-nav-link data-target="about" aria-current="page">About</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link data-target="experience">Experience</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link data-target="projects">Projects</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link data-target="publications">Publications</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link data-target="contact">Contact</button></li>
+        </ul>
+      </nav>
+
+      <article class="about active" data-page="about">
+        <header><h2 class="h2 article-title">About Me</h2></header>
+        <section class="about-text">
+          <p>I am a Fisheries Development Officer based in Nepal, focused on aquaculture development, farmer extension, and sustainable management of freshwater resources. I work across community ponds, hatcheries, and cooperative groups to improve productivity while safeguarding biodiversity and water quality.</p>
+          <p>My work blends <span class="badge">technical advisory</span> with <span class="badge">hands-on field support</span>—from pond design and seed stocking plans to feed budgeting, health management, and market linkage. I collaborate with local governments and NGOs to implement inclusive programs that raise household income and food security.</p>
+        </section>
+      </article>
+
+      <article class="resume" data-page="experience">
+        <header><h2 class="h2 article-title">Experience & Education</h2></header>
+
+        <section class="timeline">
+          <div class="title-wrapper"><h3 class="h3">Work</h3></div>
+          <ol class="timeline-list">
+            <li class="timeline-item"><h4 class="h4 timeline-item-title">Fisheries Development Officer — Livestock Service Office, Nuwakot</h4><span>20XX — Present</span><p class="timeline-text">Lead district-level aquaculture extension covering farmer trainings, pond design/rehabilitation, carp polyculture advisory, seed distribution coordination, and routine water-quality monitoring. Facilitate cooperative models and market linkages aligned with provincial targets.</p></li>
+            <li class="timeline-item"><h4 class="h4 timeline-item-title">Agriculture Officer — Krishi Samagri Company Ltd. (Bagmati Provincial Office, Hetauda)</h4><span>20XX — 20XX</span><p class="timeline-text">Supported input supply planning and farmer outreach; coordinated with local bodies on seasonal demand forecasting and logistics for crop inputs.</p></li>
+            <li class="timeline-item"><h4 class="h4 timeline-item-title">Technical Officer — Socio-economics & Agricultural Research Policy Division (SARPOD), NARC</h4><span>20XX — 20XX</span><p class="timeline-text">Contributed to the Pilot Program for Climate Resilience (PPCR): data collection, statistical analysis, and extension materials on climate-smart agriculture and fisheries.</p></li>
+          </ol>
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper"><h3 class="h3">Education</h3></div>
+          <ol class="timeline-list">
+            <li class="timeline-item"><h4 class="h4 timeline-item-title">M.Phil. in Public Administration — Tribhuvan University</h4><span>Ongoing</span><p class="timeline-text">Exploring social dynamics of rural livelihoods, cooperative development, and fisheries communities in Nepal.</p></li>
+            <li class="timeline-item"><h4 class="h4 timeline-item-title">Masters in Public Administration — Tribhuvan University</h4><span> 2021 </span><p class="timeline-text">Dealing with Public sector roles,PSM, covering Public policy, finance, management, and ethics.</p></li>
+            <li class="timeline-item"><h4 class="h4 timeline-item-title">L.L.B. — Tribhuvan University</h4><span> 2021 </span><p class="timeline-text">Various legal practice methods and Various branches of law.</p></li>
+            <li class="timeline-item"><h4 class="h4 timeline-item-title">M.Sc. in Aquaculture — Tribhuvan University</h4><span> 2016- </span><p class="timeline-text">Specialized in aquaculture systems, fish nutrition, seed technology, and hatchery management.</p></li>
+            <li class="timeline-item"><h4 class="h4 timeline-item-title">B.Sc. in Agriculture — Tribhuvan University</h4><span>2012 — 2016</span><p class="timeline-text">Foundation degree covering agronomy, livestock, fisheries, and agricultural economics.</p></li>
+          </ol>
+        </section>
+      </article>
+
+      <article class="portfolio on-dark" data-page="projects">
+        <header><h2 class="h2 article-title">Projects</h2></header>
+        <section class="projects">
+          <ul class="project-list">
+            <li class="project-item active">
+              <h3 class="project-title">Monosex Culture of Tilapia in Nepal</h3>
+              <p class="project-category">Applied Aquaculture Project</p>
+              <p class="project-description highlight-pill">
+                Implementation and study of monosex tilapia culture practices in Nepal to improve productivity and farmer adoption.
+              </p>
+            </li>
+            <li class="project-item active">
+              <h3 class="project-title">Feeding Efficiency in Carp Using Demand Feeders</h3>
+              <p class="project-category">On-Station Study</p>
+              <p class="project-description highlight-pill">
+                Preliminary cage-based trial comparing two demand feeder designs for carp fishes to estimate feed conversion and efficiency.
+              </p>
+            </li>
+          </ul>
+        </section>
+      </article>
+
+      <article class="blog" data-page="publications">
+        <header><h2 class="h2 article-title">Publications</h2></header>
+        <section class="blog-posts">
+          <ul class="blog-posts-list">
+            <li class="blog-post-item"><a href="https://www.researchgate.net/publication/327983770_Vitamin_requirements_for_Indian_major_carp_a_review" target="_blank" rel="noopener"><div class="blog-content"><div class="blog-meta"><p class="blog-category">Preprint</p><span class="dot"></span><time datetime="2018-10-01">Oct 2018</time></div><h3 class="h3 blog-item-title">Vitamin Requirements for Indian Major Carp – A Review</h3><p class="blog-text">A comprehensive review summarizing vitamin requirements and dietary formulations for Indian major carp.</p></div></a></li>
+            <li class="blog-post-item"><a href="https://www.researchgate.net/publication/325274942_Monosex_Culture_of_Tilapia_in_Nepal" target="_blank" rel="noopener"><div class="blog-content"><div class="blog-meta"><p class="blog-category">Article</p><span class="dot"></span><time datetime="2018-05-01">May 2018</time></div><h3 class="h3 blog-item-title">Monosex Culture of Tilapia in Nepal</h3><p class="blog-text">Discusses the feasibility and outcomes of monosex tilapia culture practices in Nepal.</p></div></a></li>
+            <li class="blog-post-item"><a href="https://www.researchgate.net/publication/323569050_Estimation_of_Feeding_Efficiency_in_Carp_fishes_using_two_types_of_demand_feeder_in_cages_On-station_preliminary_study" target="_blank" rel="noopener"><div class="blog-content"><div class="blog-meta"><p class="blog-category">Conference Presentation</p><span class="dot"></span><time datetime="2018-02-01">Feb 2018</time></div><h3 class="h3 blog-item-title">Estimation of Feeding Efficiency in Carp Fishes Using Demand Feeders</h3><p class="blog-text">On-station preliminary study presented on feeding efficiency in carp with demand feeders in cage culture systems.</p></div></a></li>
+          </ul>
+        </section>
+      </article>
+
+      <article class="contact" data-page="contact">
+        <header><h2 class="h2 article-title">Contact</h2></header>
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe title="Map of Nuwakot, Nepal" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3523.420160398787!2d85.106!3d27.886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ebd35a2f2f5a1b%3A0x0000000000000000!2sNuwakot%2C%20Nepal!5e0!3m2!1sen!2snp!4v1700000000000" width="400" height="300" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </figure>
+        </section>
+        <section class="contact-form">
+          <h3 class="h3 form-title">Send a message</h3>
+          <form action="#" class="form" data-form>
+            <div class="input-wrapper"><input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input /><input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input /></div>
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <button class="form-btn" type="submit" disabled data-form-btn><span>Send Message</span></button>
+          </form>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <!-- Tabs script -->
+  <script>
+  (function(){
+    const buttons = Array.from(document.querySelectorAll('.navbar .navbar-link'));
+    const pages = Array.from(document.querySelectorAll('article[data-page]'));
+    function show(page){
+      pages.forEach(a => a.classList.toggle('active', a.dataset.page === page));
+      buttons.forEach(b => {
+        const on = (b.dataset.target || b.textContent.trim().toLowerCase()) === page;
+        b.classList.toggle('active', on);
+        if(on){ b.setAttribute('aria-current','page'); } else { b.removeAttribute('aria-current'); }
+      });
+    }
+    buttons.forEach(b => b.addEventListener('click', e => {
+      e.preventDefault();
+      const target = (b.dataset.target || b.textContent.trim().toLowerCase());
+      show(target);
+      try { history.replaceState(null, '', `#${target}`); } catch(_) {}
+    }));
+    const hash = (location.hash || '').replace('#','').toLowerCase();
+    if(hash && pages.some(a => a.dataset.page === hash)) { show(hash); } else { show('about'); }
+  })();
+  </script>
+
+  <!-- Mobile navbar height → padding (prevents overlap) -->
+  <script>
+  (function(){
+    function setNavPadding(){
+      var nav = document.querySelector('.navbar');
+      if(!nav) return;
+      var h = nav.offsetHeight || 64;
+      document.documentElement.style.setProperty('--nav-h', h + 'px');
+    }
+    window.addEventListener('load', setNavPadding);
+    window.addEventListener('resize', setNavPadding);
+    setNavPadding();
+  })();
+  </script>
+</body>
+</html>
